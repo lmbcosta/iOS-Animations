@@ -86,17 +86,17 @@ class ViewController: UIViewController {
     password.center.x -= view.bounds.width
     
     // heading
-    UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut], animations: {
+    UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut], animations: {
         self.heading.center.x += self.view.bounds.width
     }, completion: nil)
     
     // username
-    UIView.animate(withDuration: 1, delay: 0.5, options: [.curveEaseInOut], animations: {
+    UIView.animate(withDuration: 2, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.0, options: [.curveEaseInOut], animations: {
         self.username.center.x += self.view.bounds.width
     }, completion: nil)
     
     // password
-    UIView.animate(withDuration: 1, delay: 0.7, options: [], animations: {
+    UIView.animate(withDuration: 2, delay: 0.7, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.0, options: [.curveEaseInOut], animations: {
         self.password.center.x += self.view.bounds.width
     }, completion: nil)
     
@@ -152,7 +152,7 @@ class ViewController: UIViewController {
     }, completion: nil)
     
     // Animate login button
-    UIView.animate(withDuration: 2.0, delay: 2.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
+    UIView.animate(withDuration: 1.5, delay: 2.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
         self.loginButton.center.y -= 30.0
         self.loginButton.alpha = 1.0
     }, completion: nil)
